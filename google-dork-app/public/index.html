@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Dork Search</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Google Dork Search</h1>
+    <label for="query">Search Query:</label>
+    <input type="text" id="query" placeholder="Enter your query">
+    <label for="fileType">File Type:</label>
+    <select id="fileType">
+        <option value="">Any</option>
+        <option value="pdf">PDF</option>
+        <option value="doc">DOC</option>
+        <!-- Add more file types as needed -->
+    </select>
+    <label for="domain">Domain:</label>
+    <input type="text" id="domain" placeholder="Enter a domain (e.g., example.com)">
+    <label for="operator">Operator:</label>
+    <select id="operator">
+        <option value="">Any</option>
+        <option value="intitle">intitle</option>
+        <option value="inurl">inurl</option>
+        <!-- Add more operators as needed -->
+    </select>
+    <button id="searchButton">Search</button>
+    <div id="results"></div>
+    <script src="app.js"></script>
+</body>
+</html>
